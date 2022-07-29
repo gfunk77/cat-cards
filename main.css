@@ -125,12 +125,15 @@ img {
   border-color: var(--accentColor);
 }
 
+main {
+  height: calc(100vh - 6rem);
+}
 .title {
   margin-top: 6rem;
   margin-bottom: 0;
 }
 .container {
-  width: 80vw;
+  width: 90vw;
   max-width: var(--fixedWidth);
   box-shadow: var(--shadow-1);
   border-radius: var(--radius);
@@ -182,6 +185,7 @@ img {
   color: var(--secondaryColor);
   cursor: pointer;
   transition: var(--transition);
+  box-shadow: none;
 }
 
 .prev-btn:hover,
@@ -207,6 +211,7 @@ img {
   border-radius: 50%;
   top: -0.25rem;
   right: -0.5rem;
+  z-index: -5;
 }
 .img-container::after {
   position: absolute;
